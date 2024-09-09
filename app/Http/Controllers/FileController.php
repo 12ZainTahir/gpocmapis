@@ -41,7 +41,12 @@ class FileController extends Controller
    
 
 
-
+public function test(Request $request) {
+    return response()->json([
+        'message' => 'File uploaded successfully',
+        'file' => 'Test',
+    ], 201);
+}
 
   
 public function ListFiles() {

@@ -29,6 +29,7 @@ Route::middleware(['checkauth'])->group(function () {
 });
 
     Route::get('/files', [FileController::class, 'ListFiles'])->name('files');
+    Route::get('/test', [FileController::class, 'test'])->name('test');
     
     Route::get('/resultfiles', [FileController::class, 'ListResultFiles'])->name('resultfiles');
     
