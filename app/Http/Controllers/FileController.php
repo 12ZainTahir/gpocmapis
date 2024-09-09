@@ -43,7 +43,7 @@ class FileController extends Controller
 
 public function test(Request $request) {
     return response()->json([
-        'message' => 'File uploaded succlly',
+        'message' => 'File uploaded ',
         'file' => 'Test',
     ], 201);
 }
